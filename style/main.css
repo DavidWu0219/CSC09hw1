@@ -1,0 +1,232 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  margin: 0 auto;
+  padding: 20px;
+  background: url("../media/wallpaper.jpg") no-repeat center center fixed;;
+  background-size: cover;
+  max-width: 80%;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;  
+  width: 100%;
+}
+
+header h1 {
+  color: black;
+  font-size: 100px;
+}
+
+nav {
+  background: whitesmoke;
+  padding: 15px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+nav a {
+  margin: 15px;
+  text-decoration: none;
+  color: #0077cc;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+button {
+  background-color: #0077cc;   
+  color: white;              
+  border: none;
+  padding: 10px 20px 10px 20px;   
+  margin-bottom: 2%;      
+  cursor: pointer;             
+  border-radius: 4px;         
+  transition: background-color 0.3s ease; 
+}
+
+button:disabled {
+  background-color: #d4d4d4;
+  cursor: not-allowed;
+}
+
+button:disabled:hover {
+  background-color: #d4d4d4;
+  cursor: not-allowed;
+}
+
+
+/* toggle image form */
+#image-form {
+  display: block;
+}
+
+#new-image-btn{
+  font-size: 16px;            
+}
+
+button:hover{
+  background-color: #005fa3;  
+}
+
+/* add image form section*/
+#add-image {
+  display: flex;
+  width: fit-content;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+
+  background: whitesmoke;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#image-form input {
+  padding: 8px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#image-form button:hover {
+  background: #005fa3;
+}
+
+/* Gallery Section*/
+#gallery {
+  display: flex;
+  width: fit-content;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+
+  background: whitesmoke;
+  color: brown;  /*texxxt color */
+
+  min-width: 55vw;
+  min-height: 60vw;
+
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#image-box{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;      
+  justify-content: center;  
+
+  min-width: 50vw;
+  min-height: 40vw;
+
+  background: #d4d4d4;    
+  color: grey;
+
+
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+
+  margin: 20px;
+}
+
+#image-box img {
+  max-width: 100%;  
+  max-height: 400px;
+  width: auto;
+  height: auto;
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3); 
+}
+/*if no image in gallery show this instead*/
+#no-image {
+  display: block;
+}
+
+#image-btn button{
+  width: 10vw;
+  margin-left: 1vw;
+  margin-bottom: 3vh;
+}
+
+
+/* Comment section, inside gallery*/
+
+#comments {
+
+  font-size: 30px;
+  padding: 10px;
+  width: 100%; 
+  min-width: 50vw;
+  min-height: 20vw;
+  text-align: left;
+  color: grey;
+}
+
+#comment-form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 90%;
+  padding: 8px;
+}
+
+#comment-form input {
+  min-height: 40px; 
+
+}
+
+#comment-form textarea {
+  min-height: 80px;  
+
+  resize: vertical;  
+}
+
+#comment-section {
+  list-style-type: none; 
+  padding: 10px;          
+  margin: 0;
+}
+
+#comment-section li {
+  color: black;
+  font-size: 10px;
+  background: #f9f9f9;            
+  margin-bottom: 12px;             
+  padding: 12px 16px;             
+  border-radius: 10px;            
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3); 
+  overflow-wrap: anywhere;
+}
+
+#comment-section li button{
+  margin-top: 10px;  
+  display: block;    
+}
+
+#comment-section li h1 {
+  margin-bottom: 12px; 
+}
+
+
+
+
